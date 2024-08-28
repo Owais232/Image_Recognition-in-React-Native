@@ -4,11 +4,12 @@ import { launchImageLibrary, launchCamera } from 'react-native-image-picker';
 import axios from 'axios';
 import { encode } from 'base-64';
 
-import localimage from './android/assets/1.png';
 
 const GEMINI_API_KEY = "AIzaSyCoUrY_KJ-qHzDEuCm9ohcbwd2utYdQ6V0"; 
 
 const App = () => {
+
+  const localimage= require('./android/assets/1.png');
   const [img, setImg] = useState(localimage);
   const [tags, setTags] = useState([]);
   const [description, setDescription] = useState("");
@@ -82,7 +83,7 @@ const App = () => {
     });
   };
 
-  const getDescriptionFromChatBot = async (tags) => {
+  const getDescriptionFromChatBot = async (tags : any) => {
     try {
       setDescriptionLoading(true); 
   
@@ -127,7 +128,7 @@ const App = () => {
   };
   
   
-  const analyzeImage = (base64Image) => {
+  const analyzeImage = (base64Image : any) => {
     setLoading(true); 
     const apiKey = 'acc_95433db4448218e';
     const apiSecret = 'c17e270e258e464ef09c629fa0190eb1';
