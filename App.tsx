@@ -6,12 +6,12 @@ import axios from 'axios';
 import { encode } from 'base-64';
 
 // API keys and other constants
-const GEMINI_API_KEY = "AIzaSyDTvPhT6m6u6Tc4hj5WlUyZcCrZnKgBdaI";
-const CLARIFAI_PAT = '64d13f72f153451aabf6772bd548fa07';
-const USER_ID = 'gcp';
-const APP_ID = 'generate';
-const MODEL_ID = 'Imagen';
-const MODEL_VERSION_ID = '8d5508722cc8444385af839b98fdf883';
+const GEMINI_API_KEY = ";
+const CLARIFAI_PAT = '';
+const USER_ID = '';
+const APP_ID = '';
+const MODEL_ID = '';
+const MODEL_VERSION_ID = '';
 
 const App = () => {
   const [img, setImg] = useState(null);
